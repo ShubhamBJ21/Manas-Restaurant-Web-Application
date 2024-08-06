@@ -1,0 +1,153 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    background: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+    margin: 0;
+    padding: 0;
+}
+
+/* Header styles */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    width: 100%;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 28px;
+}
+
+header h3 {
+    margin: 0;
+    font-size: 16px;
+    color: #fda085;
+}
+
+/* Navigation styles */
+nav {
+    background-color: #fff;
+    padding: 15px;
+    width: 100%;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 80px; /* Adjusted to be below header */
+    left: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 15px;
+}
+
+nav ul li a {
+    color: #333;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #fda085;
+    color: #fff;
+}
+
+/* Main content styles */
+.content {
+    padding: 20px;
+    padding-top: 140px; /* Adjusted to be below the fixed header and nav */
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.content h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center; /* Center align the heading */
+}
+
+.content p {
+    font-size: 18px;
+    text-align: center; /* Center align the paragraph */
+}
+
+/* Table styles */
+table {
+    width: calc(100% - 20px); /* Full width minus 10px margin on each side */
+    border-collapse: collapse;
+    margin: 10px; /* 10px margin around the table */
+    background-color: #fff; /* White background */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+table, th, td {
+    border: 1px solid #ccc;
+}
+
+th, td {
+    padding: 15px;
+    text-align: left;
+}
+
+th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+/* Button styles */
+button[type="submit"] {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0; /* No margin */
+}
+
+button[type="submit"]:hover {
+    background-color: darkred;
+}
+
+button.update {
+    background-color: blue;
+    margin-right: 10px; /* Margin for spacing between buttons */
+}
+
+button.update:hover {
+    background-color: darkblue;
+}
+
+/* Footer styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
